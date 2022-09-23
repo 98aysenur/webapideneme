@@ -1,0 +1,20 @@
+﻿@model webapideneme.Models.DavetiyeModel
+@{
+    ViewBag.Title = "Thanks";
+}
+
+<h1>Teşekkürler,@Model.Ad</h1>
+<div class="lead">
+
+    @if (Model.KatilmaDurumu == true) { 
+
+    @:Gelmene çok sevindim:) BütütnHazırlıklar Tamamlandı..!
+    @Html.Action("Katilanlar","Home")
+
+    }
+            else
+            {
+                @:Gelemeyecek Olmana Çok Üzüldüm :( Bunu bildirdiğin için Teşekküe Ederiz)
+            }
+</div>
+
